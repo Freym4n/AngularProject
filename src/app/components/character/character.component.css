@@ -1,0 +1,107 @@
+#circle {
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
+    height: 180px;
+    width: 180px;
+    background-color: #555;
+    border-radius: 50%;
+    
+  }
+  
+  #img-container {
+      transform: translate(-40px, -10px);
+      height: 185px;
+      width: 200px;
+      overflow: hidden;
+      display: inline-block;
+  }
+  
+  #img-container img {
+      
+      height: 250px;
+      margin: -20px 0px 0px -40px;
+  }
+  
+  #inner-skew {
+      box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.2);
+      display: inline-block;
+      border-radius: 50%;
+      overflow: hidden;
+      font-size: 0px;
+      margin: 0px 0px 0px 0px;
+      background: #c8c2c2;
+      height: 180px;
+      width: 180px;
+  }
+  
+  #text-container {
+    width: 90%;
+    min-height: 300px;
+    height: max-content;
+    padding: 0px 20px 20px 20px;
+    margin-top: 40px;
+    margin-left: 40px;
+    background: #fff;
+    line-height: 19px;
+    font-size: 11px;
+  }
+
+
+  .description {
+      height: 150px;
+      margin: -10px 0px 0px 0px;
+      font-size: inherit;
+      font-family: 'Loew-Medium';
+      color: #7a7677;
+  }
+
+  .related {
+    margin-bottom: 30px;
+    color: #6e6566;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: 'Loew-ExtraBold';
+}
+  .title {
+    margin: -10px 0px 0px 0px;
+    color: hsl(189, 6%, 22%);
+    height: 50px;
+    margin-bottom: 0px;
+    font-weight: 900;
+    font-size: 16px;
+    font-family: 'Organetttto';
+}
+ .comics {
+     margin-top: -30px;
+     padding-left: 10px;
+     height: 40px;
+     font-family: 'Loew-Medium';
+     color: #7a7677;
+     cursor: pointer;
+ }
+
+ .comics3{
+    padding-left: 10px;
+    height: 40px;
+    font-family: 'Loew-Medium';
+    color: #7a7677;
+    cursor: pointer;
+}
+ .comics2 {
+    height: 40px;
+    font-family: 'Loew-Medium';
+    color: #7a7677;
+    cursor: pointer;
+}
+
+.viewmore {
+    width: 80px;
+    height: 30px;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: #ed1d24;
+    border-color: #ed1d24;
+    cursor: pointer;
+    
+}

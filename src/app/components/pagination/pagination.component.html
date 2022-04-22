@@ -1,0 +1,7 @@
+<div class="center">
+    <div class="pagination">
+    <a (click)="goToLeft()">❮</a>
+    <a  *ngFor="let number of list" [id]="number" (click)="changeSelected(number)"   >{{number}}</a>
+    <a (click)="goToRight()">❯</a>
+    </div>
+  </div>

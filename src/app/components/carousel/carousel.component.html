@@ -1,0 +1,25 @@
+<section>
+    <div class="container">
+        <div class="carousel">
+            <input *ngFor="let comic of comics" type="radio" name="slides" [id]="comic.id">
+            <ul class="carousel__slides">
+                <li *ngFor="let comic of comics" class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img [src]="comic.image" style="height: 300px; width: 200px" alt="">
+                        </div>
+                        <figcaption>
+                            {{comic.description}}
+                            <span class="credit">{{comic.title}}</span>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>    
+            <ul class="carousel__thumbnails">
+                <li *ngFor="let comic of comics">
+                    <label [for]="comic.id"><img [src]="comic.image" alt=""></label>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

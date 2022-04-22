@@ -1,0 +1,14 @@
+<div class="iconContainer">
+    <img (click)="close()" src="../../../assets/images/btn-close.png">  
+</div>
+<div class="container">
+    <br>
+    <div style="width: 100%;">
+        <h5>These characters are related to {{name}} in the comics.</h5>
+    </div>  
+    <br>
+    <div *ngFor="let c of characters" (click)="goToCharacter(c)" class="block">
+        <img [src]="c.image">
+        <div>{{c.name}}</div>
+    </div>
+</div>

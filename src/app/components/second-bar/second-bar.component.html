@@ -1,0 +1,20 @@
+<div class="secondbar">
+    <img src="../../../assets/images/characters.png">
+    <span class="subtitle">
+        Characters
+    </span>
+    <span class="selectdiv">
+        <label (change)="sort($event)">
+            <select>
+                <option selected value=""> Sort By </option>
+                <option value="name">Name Ascending</option>
+                <option value="-name">Name Descending</option>
+                <option value="modified">Modified Ascending</option>
+                <option value="-modified">Modified Descending</option>
+            </select>
+        </label>
+        <img class="arrow"   src="../../../assets/images/btn_arrow_down.png">
+    </span>
+    
+</div>
+

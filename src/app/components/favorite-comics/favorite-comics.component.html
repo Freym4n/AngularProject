@@ -1,0 +1,14 @@
+<div class="favoriteList">
+    <div class="barContainer">
+        <img class="image" src="../../../assets/images/favourites.png">
+        <span class="title">
+            My favourites
+        </span>
+    </div>
+    <div *ngFor="let c of comics" class="list">
+        <div (click)="comicModal(c)">
+            <app-comic [comic]="c" (deleteComic)="deleteComic($event)" ></app-comic>
+        </div>
+    </div>
+</div>
+

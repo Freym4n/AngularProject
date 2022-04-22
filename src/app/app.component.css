@@ -1,0 +1,27 @@
+body {
+    background: #f4f4f4;
+    height: max-content;
+  }
+
+  #favlist {
+    background-color: #ebebeb;
+    min-height: 2100px;
+  }
+
+  @font-face {
+    font-family: "Organetttto";
+    src: local("Organetttto"), url(../assets/fonts/Organetto-Bold.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "Loew-Medium";
+    src: local("Loew-Medium"), url(../assets/fonts/Loew-Medium.otf) format("truetype");
+  }
+  @font-face {
+    font-family: "Loew-ExtraBold";
+    src: local("Loew-ExtraBold"), url(../assets/fonts/Loew-ExtraBold.otf) format("truetype");
+  }
+  @font-face {
+    font-family: "Loew-Bold";
+    src: local("Loew-Bold"), url(../assets/fonts/Loew-Bold.otf) format("truetype");
+  }

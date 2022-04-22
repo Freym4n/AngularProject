@@ -1,0 +1,28 @@
+<div>
+    <div id="text-container" class="row">
+        <div class="col s5">
+            <div id="img-container">
+                <div id="inner-skew">
+                    <img [src]="character.image">
+                </div>
+            </div>
+            <div class="related">
+                Related Comics
+            </div>
+            <div class="comics2" (click)="comicModal(character.comics.length > 0?character.comics[0].url:'')">{{character.comics.length > 0?character.comics[0].title:""}}</div>
+            <div class="comics2" (click)="comicModal(character.comics.length > 2?character.comics[2].url:'')">{{character.comics.length > 2?character.comics[2].title:""}}</div>
+        </div>
+        <div class="col s7">
+            <div class="title">
+                {{character.name | uppercase}}
+            </div>
+            <div class="description">{{character.description}}</div>
+            <div>
+                <button class="viewmore"(click)="goToDetails()" >VIEW MORE</button>
+                <button class="viewmore"(click)="goToRelated()" >RELATED</button>
+            </div>
+            <div class="comics" (click)="comicModal(character.comics.length > 1?character.comics[1].url:'')">{{character.comics.length > 1?character.comics[1].title:""}}</div>
+            <div class="comics3" (click)="comicModal(character.comics.length > 3?character.comics[3].url:'')">{{character.comics.length > 3?character.comics[3].title:""}}</div>
+        </div>
+    </div>
+</div>

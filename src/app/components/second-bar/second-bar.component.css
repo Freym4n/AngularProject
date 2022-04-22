@@ -1,0 +1,42 @@
+.secondbar {
+    margin-top: 25px;
+    margin-left: 40px;
+    width: 95%;
+}
+
+.subtitle {
+    margin-left: 10px;
+    font-family: 'Loew-Medium';
+    font-size: 24px;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+.selectdiv select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Add some styling */
+    display: block;
+    width: 220px;
+    height: 50px;
+    float: right;
+    padding: 0px 24px;
+    font-size: 14px;
+    line-height: 1.75;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    -ms-word-break: normal;
+    word-break: normal;
+    cursor: pointer;
+    font-family: 'Loew-Bold';
+    color: #7a7677;
+  }
+
+  .arrow {
+    float: right;
+    margin-right: -210px;
+    margin-top: 12px;
+    cursor: pointer;
+  }

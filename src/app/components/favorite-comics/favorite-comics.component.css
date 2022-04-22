@@ -1,0 +1,26 @@
+.list {
+    justify-content: center;
+    display: flex;
+  }
+
+
+  img.image {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+
+  }
+
+  .barContainer{
+    font-size: 24px;
+    font-weight: 900;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+.title {
+  margin-left: 5%;
+  font-family: 'Loew-ExtraBold';
+  font-size: 28px;
+}

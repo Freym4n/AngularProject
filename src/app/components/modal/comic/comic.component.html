@@ -1,0 +1,37 @@
+<div class="modal-content">
+    <div class="iconContainer">
+        <img (click)="close()" src="../../../assets/images/btn-close.png">  
+    </div>
+    <div class="row">
+        <div class="col s5">
+            <div class="imgContainer">
+                <img class="img" [src]="comics[0].image">
+            </div>
+        </div>
+        <div class="col s7">
+            <div class="header">{{comics[0].title | uppercase}}</div>
+            <div class="description">{{comics[0].description}}</div>
+        </div>
+    </div>
+    <div class="row">
+        <span *ngIf="comics[0].favorite" type="button" class="updateBtnFavorite" (click)="updateFavoriteStatus()">
+            <div class="btnContainer">
+                <img  class="btnIcon" src="../../../../assets/images/btn-favourites-primary.png">
+                <span>ADDED TO FAVOURITES</span> 
+            </div>
+        </span>
+        <span *ngIf="!comics[0].favorite"type="button" class="updateBtn" (click)="updateFavoriteStatus()">
+            <div class="btnContainer">
+                <img class="btnIcon" src="../../../../assets/images/btn-favourites-primary.png">
+                <span>ADD TO FAVOURITES</span>
+            </div>
+        </span>
+        <span type="button" class="buyBtn" (click)="close()">
+            <div class="btnContainer">
+                <img class="btnIcon" src="../../../../assets/images/shopping-cart-primary.png">
+                BUY FOR ${{comics[0].price}}
+            </div>
+        </span>
+    </div>
+     
+</div>

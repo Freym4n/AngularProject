@@ -1,0 +1,30 @@
+<body>
+    <app-nav-bar (filter)="changeFilter($event)"></app-nav-bar>
+    <div class="row">
+      <div class="col s9">
+        <app-second-bar (sortBy)="changeSort($event)"></app-second-bar>
+        <div class="mesage" *ngIf="total == 0">
+            <h4>There are no characters beginning with this name.</h4>
+        </div>
+        <div class="row">
+          <div class="col s6">
+            <app-characters [page]="page1" [filter]="filter" [orderBy]="orderBy" (updateFav)="updateFav()"></app-characters>
+          </div>
+          <div class="col s6">
+            <app-characters  [page]="page2" [filter]="filter" [orderBy]="orderBy" (updateFav)="updateFav()"></app-characters>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <app-pagination [total]="total" (updatePage)="updatePage($event)"></app-pagination>
+          </div>
+        </div>
+      </div>
+      <div class="col s3" id="favlist">
+        <app-favorite-comics [comics]="comicList" (deleteComicFromFav)="deleteComic($event)" (updateList2)="updateFav()"></app-favorite-comics>
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+  <body>
+  
+  

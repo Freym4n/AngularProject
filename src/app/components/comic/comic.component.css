@@ -1,0 +1,22 @@
+
+img.image {
+    width: 200px;
+    height: 300px;
+}
+
+.title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-family: 'Loew-ExtraBold';
+}
+
+.container {
+    width: 200px;
+}
+
+.iconContainer {
+    transform: translate(180px,30px);
+    cursor: pointer;
+}

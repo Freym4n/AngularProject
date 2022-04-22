@@ -1,0 +1,18 @@
+body {
+    background: #f4f4f4;
+    height: max-content;
+  }
+
+  #favlist {
+    background-color: #ebebeb;
+    min-height: 2100px;
+  }
+
+  .mesage {
+      width: 100%;
+      align-content: center;
+      text-align: center;
+  }
+  .mesage h4{
+    text-align: center;
+  }
